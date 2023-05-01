@@ -7,7 +7,7 @@ on:
 
 defaults:
   run:
-    shell: bash -euxo pipefail
+    shell: bash
 
 jobs:
   scrape-images:
