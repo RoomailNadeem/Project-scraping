@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+defaults:
+  run:
+    shell: bash -euxo pipefail
+
 jobs:
   scrape-images:
     runs-on: ubuntu-latest
