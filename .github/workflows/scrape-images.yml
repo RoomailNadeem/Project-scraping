@@ -15,6 +15,11 @@ jobs:
           node-version: '16.x'
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+        env:
+          NODE_VERSION: '16.x'
       - name: Install Puppeteer dependencies
         run: |
           sudo apt-get update && \
