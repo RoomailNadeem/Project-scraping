@@ -18,8 +18,6 @@ jobs:
         with:
           ref: ${{ github.ref }}
           fetch-depth: 0
-        env:
-          NODE_VERSION: '16.x'
       - name: Install Puppeteer dependencies
         run: |
           sudo apt-get update && \
