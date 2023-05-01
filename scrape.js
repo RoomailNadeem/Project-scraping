@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer-core');
 
 (async () => {
   const browser = await puppeteer.launch({
-    executablePath: '/usr/bin/google-chrome-stable', // or wherever chrome is installed on your machine
+    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' // or wherever chrome is installed on your machine
     args: ['--no-sandbox', '--disable-setuid-sandbox'] // may be necessary depending on your system
   });
   const page = await browser.newPage();
