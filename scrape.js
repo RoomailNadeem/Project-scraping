@@ -1,10 +1,11 @@
 const puppeteer = require('puppeteer-core');
+const chromium = require('chrome-aws-lambda');
 
 (async () => {
   const browser = await puppeteer.launch({
-    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' // or wherever chrome is installed on your machine
-    args: ['--no-sandbox', '--disable-setuid-sandbox'] // may be necessary depending on your system
-  });
+  args: ['--no-sandbox', '--disable-setuid-sandbox']
+});
+
   const page = await browser.newPage();
   await page.goto('https://sol-testing.webflow.io/');
   const imageUrls = await page.evaluate(() => {
