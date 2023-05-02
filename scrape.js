@@ -2,12 +2,18 @@ const puppeteer = require('puppeteer-core');
 
 (async () => {
   const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: chromeArgs,
     executablePath: 'C:\Program Files\Google\Chrome',
-    headless: true
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
-  // rest of the code
+
+  const page = await browser.newPage();
+
+  // rest of your code goes here
+
 })();
+
 
 
   const page = await browser.newPage();
