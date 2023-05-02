@@ -6,7 +6,17 @@ const puppeteer = require('puppeteer-core');
       '--no-sandbox',
       '--disable-setuid-sandbox'
     ],
-    executablePath: 'https://www.google.com/',
+    executablePath: 'const puppeteer = require('puppeteer-core');
+
+(async () => {
+  const browser = await puppeteer.launch({
+    executablePath: 'C:\\Users\\Roomi\\Downloads\\Compressed\\chrome-win\\chrome.exe',
+    headless: false
+  });
+  const page = await browser.newPage();
+  // ... rest of your code
+})();
+',
     headless: "new"
   });
 
