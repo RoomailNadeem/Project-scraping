@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer-core');
     args: ['--no-sandbox', '--disable-setuid-sandbox'] // may be necessary depending on your system
   });
   const page = await browser.newPage();
-  await page.goto('https://example.com');
+  await page.goto('https://sol-testing.webflow.io/');
   const imageUrls = await page.evaluate(() => {
     const images = document.querySelectorAll('img');
     return Array.from(images).map(img => img.src);
