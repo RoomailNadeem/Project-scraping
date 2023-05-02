@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer-core');
       '--no-sandbox',
       '--disable-setuid-sandbox'
     ],
-    executablePath: 'C:\Users\Roomi\Downloads\Compressed\chrome-win>.\chrome.exe',
+    executablePath: 'C:/Users/Roomi/Downloads/Compressed/chrome-win/chrome.exe',
     headless: false
   });
   const page = await browser.newPage();
