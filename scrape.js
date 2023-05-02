@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer-core');
       '--no-sandbox',
       '--disable-setuid-sandbox'
     ],
-    executablePath: 'chrome.exe',
+    executablePath: 'https://www.google.com/',
     headless: "new"
   });
 
