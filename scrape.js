@@ -7,7 +7,8 @@ const puppeteer = require('puppeteer-core');
       '--disable-setuid-sandbox'
     ],
     executablePath: 'C:\Users\Roomi\Downloads\Compressed\chrome-win\chrome.exe',
-    headless: "new"
+    headless: "new",
+    devtools: false
   });
   const page = await browser.newPage();
   await page.goto('https://sol-testing.webflow.io/');
