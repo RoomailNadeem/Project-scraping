@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer-core');
       '--no-sandbox',
       '--disable-setuid-sandbox'
     ],
-    executablePath: 'C:\Users\Roomi\Downloads\Compressed\chrome-win\chrome.exe',
+    executablePath: '/usr/bin/google-chrome-stable',
     headless: "new",
     devtools: false
   });
