@@ -6,8 +6,8 @@ const puppeteer = require('puppeteer-core');
       '--no-sandbox',
       '--disable-setuid-sandbox'
     ],
-    executablePath: 'C:\\Program Files\\Google\\Chrome\\chrome.exe',
-    headless: true
+    executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
+    headless: "new"
   });
 
   const page = await browser.newPage();
